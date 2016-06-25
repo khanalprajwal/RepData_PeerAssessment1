@@ -1,11 +1,3 @@
----
-title: "Reproducible Research: Peer Assessment 1"
-author: "Binod Pathak"
-output: 
-html_document:
-keep_md: true
----
-
 ## Loading required library
 ```{r echo = TRUE}
 library(lattice)
@@ -124,7 +116,7 @@ When NA was removed, there was 53 days records for steps in different interval. 
 For this part the weekdays() function may be of some help here. Use the dataset with the filled-in missing values for this part.
 ```
 
-####1. Create a new factor variable in the dataset with two levels ñ ìweekdayî and ìweekendî indicating whether a given date is a weekday or weekend day.
+####1. Create a new factor variable in the dataset with two levels ‚Äì ‚Äúweekday‚Äù and ‚Äúweekend‚Äù indicating whether a given date is a weekday or weekend day.
 ```{r echo = TRUE}
 get_day <- function(date){
         weekday <- weekdays(as.Date(date))
